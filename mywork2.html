@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Showcase - Christopher Henyard</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="portfolio website.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html"><img src="images/logo.svg" alt="Christopher Henyard: Web Designer"></a>
+      </h1>
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <img src="images/nav bars.svg">
+          </label>
+          <ul>
+            <a class="linkdesktop" href="mywork.html"><b>Showcase</b></a>
+            <a class="linkmobile" href="mywork2.html"><b>Showcase</b></a>
+            <a href="aboutme.html"><b>About Me</b></a>
+          </ul>  
+        </nav>
+    </header>
+    <main>
+     
+      <h1 class="h1">Showcase</h1>
+<div class="PAD">
+        <div class="galleries">
+          <div class="maingallery1">
+            <h2>Infinity Spacelines</h2>
+              <img class="mySlides1" src="images/IS mobile/IS1mobile.PNG" alt="Screenshot 1">
+              <img class="mySlides1" src="images/IS mobile/IS2mobile.PNG" alt="Screenshot 2">
+              <img class="mySlides1" src="images/IS mobile/IS3mobile.PNG" alt="Screenshot 3">
+              <img class="mySlides1" src="images/IS mobile/IS4mobile.PNG" alt="Screenshot 4">
+              <img class="mySlides1" src="images/IS mobile/IS5mobile.PNG" alt="Screenshot 5">
+              <img class="mySlides1" src="images/IS mobile/IS6mobile.PNG" alt="Screenshot 6">
+              <img class="mySlides1" src="images/IS mobile/IS7mobile.PNG" alt="Screenshot 7">
+              <img class="mySlides1" src="images/IS mobile/IS8mobile.PNG" alt="Screenshot 8">
+              <img class="mySlides1" src="images/IS mobile/IS9mobile.PNG" alt="Screenshot 9">
+              <img class="mySlides1" src="images/IS mobile/IS10mobile.PNG" alt="Screenshot 10">
+            <div class="arrows">
+              <button class="arrow-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+              <button class="arrow-right" onclick="plusDivs(1, 0)">&#10095;</button>
+            </div>
+            <div class="projectinfo">
+              <p><b>Type:</b> HTML Website</p>
+              <p><b>Programs used:</b> Adobe Dreamweaver, Photoshop and Illustrator</p>
+              <p><b>Description:</b> I designed and coded this website for a fictional business.</p>
+            </div> 
+          </div>
+
+          <div class="maingallery2">
+            <h2>West Kings Resort &amp; Casino</h2>
+              <img class="mySlides2" src="images/WK mobile/WK1mobile.PNG" alt="Screenshot 1">
+              <img class="mySlides2" src="images/WK mobile/WK2mobile.PNG" alt="Screenshot 2">
+              <img class="mySlides2" src="images/WK mobile/WK3mobile.PNG" alt="Screenshot 3">
+              <img class="mySlides2" src="images/WK mobile/WK4mobile.PNG" alt="Screenshot 4">
+              <img class="mySlides2" src="images/WK mobile/WK5mobile.PNG" alt="Screenshot 5">
+              <img class="mySlides2" src="images/WK mobile/WK6mobile.PNG" alt="Screenshot 6">
+              <img class="mySlides2" src="images/WK mobile/WK7mobile.PNG" alt="Screenshot 7">
+              <img class="mySlides2" src="images/WK mobile/WK8mobile.PNG" alt="Screenshot 8">
+              <img class="mySlides2" src="images/WK mobile/WK9mobile.PNG" alt="Screenshot 9">
+              <img class="mySlides2" src="images/WK mobile/WK10mobile.PNG" alt="Screenshot 10">
+              <img class="mySlides2" src="images/WK mobile/WK11mobile.PNG" alt="Screenshot 11">
+            <div class="arrows">
+              <button class="arrow-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+              <button class="arrow-right" onclick="plusDivs(1, 1)">&#10095;</button>
+            </div>
+            <div class="projectinfo">
+              <p><b>Type:</b> HTML Website</p>
+              <p><b>Programs used:</b> Adobe Dreamweaver, Photoshop and Illustrator</p>
+              <p><b>Description:</b> I designed and coded this website for a fictional business.</p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          var slideIndex = [1,1];
+          var slideId = ["mySlides1", "mySlides2"]
+          showDivs(1, 0);
+          showDivs(1, 1);
+          
+          function plusDivs(n, no) {
+            showDivs(slideIndex[no] += n, no);
+          }
+          
+          function showDivs(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) {slideIndex[no] = 1}
+            if (n < 1) {slideIndex[no] = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex[no]-1].style.display = "block";  
+          }
+        </script>
+      
+</div>
+
+    </main>
+    <footer>
+        <p><i>Copyright &#169 2023 Christopher Henyard. All rights reserved.</i></p>
+
+    </footer>
+  </body>
+</html>
