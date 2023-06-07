@@ -50,7 +50,7 @@ nav a:hover {
 /*Hero*/
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/hero.jpg");
+    background-image: url("images/Clicker\ Hero.png");
     height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,15 +58,14 @@ nav a:hover {
     padding-top: 1px;
 }
 .hero-text {
-    text-align: center;
     position: relative;
     padding: 0px 30px 0px 30px;
-    font-size: 20px;
+    font-size: 30px;
     top: 45%;
-    left: 50%;
+    left: 37%;
+    max-width: fit-content;
     transform: translate(-50%, -50%);
     color: white;
-    text-shadow: 2px 10px 10px black;
 }
 
 /*Hero End*/
@@ -235,7 +234,7 @@ footer {
 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
 
     .checkbtn {
         display: block;
@@ -259,6 +258,13 @@ footer {
     }
     #check:checked ~ ul{
         right: 0;
+    }
+    .hero-image {
+        background-position: 60%;
+    }
+    .hero-text {
+        max-width: 400px;
+        left: 30%;
     }
 
 }
@@ -289,7 +295,16 @@ footer {
     }
 
     .hero-image {
-        background-position: 20%;
+        background-image: url("images/Clicker\ Hero\ media.png");
+        background-position: 50%;
+    }
+    
+    .hero-text {
+        font-size: 25px;
+        max-width: fit-content;
+        top: 10%;
+        left: 50%;
+        text-align: center;
     }
     
     /*Programs tablet*/
@@ -366,7 +381,10 @@ footer {
     nav ul {
         top: 80px;
     }
-    
+
+    .hero-text {
+        font-size: 20px;
+    }
     .PAD {
         padding: 0px;
     }
@@ -524,13 +542,25 @@ footer {
 
 }
 
-
-@media (max-height: 655px) {
+@media (max-height: 800px) {
 
     .hero-image {
         height: 70vh;
     }
+}
 
+@media (max-height: 415px) {
+
+    .hero-image {
+        background-image: url("images/Clicker\ Hero.png");
+    }
+    .hero-text {
+        font-size: 20px;
+        top: 45%;
+        left: 30%;
+        max-width: 300px;
+        
+    }
 }
 
 @media (max-height: 400px) {
