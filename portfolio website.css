@@ -99,6 +99,33 @@ h2 {
 .sitemobile {
     display: none;
 }
+
+/*What I Do*/
+
+.WhatIDo {
+    max-width: 1400px;
+    margin: 100px auto 100px auto;
+    background-color: #111314;
+    padding: 20px 0px 30px 0px;
+    border-radius: 30px;
+}
+.WhatIDorow {
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto 10px auto;
+    max-width: 1300px;
+}
+.WhatIDoimg {
+    margin: 20px auto 10px auto;
+    padding: 0px 20px 0px 20px;
+    
+}
+.WhatIDoimg img {
+    max-width: 100%;
+}
+
+/*What I Do End*/
+
 /*Programs I know*/
 
 .programs {
@@ -117,6 +144,13 @@ h2 {
     height: auto;
 }
 
+.programsrow2 {
+    display: flex;
+    flex-direction: row;
+    width: 1300px;
+    height: auto;
+}
+
 .programimg {
     margin: 20px auto 10px auto;
     padding: 0px 20px 0px 20px;
@@ -127,6 +161,26 @@ h2 {
 }
 
 /*Programs End*/
+
+/*Education*/
+
+ .education {
+    background-color: #111314;
+    text-align: center;
+    max-width: 1400px;
+    margin: 100px auto 100px auto;
+    padding: 20px 0px 30px 0px;
+    border-radius: 30px;
+ }
+
+ .school {
+    background-color: #41474c;
+    color: white;
+    padding: 20px 20px 10px 20px;
+    margin: 30px 30px 30px 30px;
+ }
+ 
+/*Education End*/
 
 /*Image Gallery*/
 
@@ -307,6 +361,21 @@ footer {
         text-align: center;
     }
     
+     /*What I do tablet*/
+
+    .WhatIDo {
+        max-width: 700px;
+    }
+    .WhatIDorow {
+        flex-direction: column;
+    }
+    .WhatIDoimg {
+        padding: 0px 30px 0px 30px;
+        margin-bottom: 25px;
+    }
+
+    /*What I do tablet end*/
+    
     /*Programs tablet*/
 
     .programs {
@@ -314,17 +383,27 @@ footer {
         
     }
     .programsrow {
-        flex-direction: column;
-        height: auto;
+        margin: 0px 30px 10px 30px;
     }
-
+    .programsrow2 {
+        flex-direction: column;
+    }
+    
     .programimg {
         padding: 0px 30px 0px 30px;
         margin-bottom: 25px;
     }
 
     /*Programs tablet end*/
+    
+    /*Education tablet*/
 
+    .education {
+        max-width: 700px;
+    }
+
+    /*Education tablet end*/
+    
     /*Image gallery tablet*/
 
     .maingallery1, .maingallery2 {
@@ -403,7 +482,15 @@ footer {
     .sitemobile {
         display: block;
     }
+    
+    /*What I Do mobile*/
 
+    .WhatIDo {
+        max-width: 350px;
+    }
+
+    /*What I Do mobile end*/
+    
     /*Programs mobile*/
 
     .programs {
@@ -412,14 +499,24 @@ footer {
     .programsrow {
         flex-direction: column;
         height: auto;
+        margin: 0px auto 10px auto;
     }
-    
+    .programsrow2 {
+        width: auto;
+    }
     .programimg {
         padding: 0px 30px 0px 30px;
         margin-top: 0px;
     }
   
     /*Programs mobile end*/
+    
+    /*Education mobile*/
+
+    .education {
+        max-width: 350px;
+    }
+    /*Education mobile end*/
 
     /*Image gallery mobile*/
    
@@ -497,24 +594,38 @@ footer {
     .h1 {
         max-width: 150px;
     }
+    
+    /*What I Do smallest*/
 
+    .WhatIDo {
+        max-width: 100%;
+    }
+    
+    /*What I Do smallest end*/
+    
     /*Programs smallest*/
 
     .programs {
         max-width: 100%;
-        border-radius: 0px;
     }
     .programimg {
         padding: 0px 20px 0px 20px;
     }
 
     /*Programs smallest end*/
+    
+    /*Education smallest*/
 
+    .education {
+        max-width: 100%;
+    }
+    
+    /*Education smallest end*/
+    
     /*Image Gallery smallest*/
 
     .maingallery1, .maingallery2 {
         max-width: 100%;
-        border-radius: 0px;
     }
     .mySlides1, .mySlides2 {
         margin: 0px auto 0px auto;
@@ -527,7 +638,6 @@ footer {
 
     .bio {
         max-width: 100%;
-        border-radius: 0px;
     }
     .imagemobile {
         display: flex;
