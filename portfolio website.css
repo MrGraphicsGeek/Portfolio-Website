@@ -157,6 +157,7 @@ h2 {
 }
 
 .programimg img {
+    width: 200px;
     max-width: 100%;
 }
 
